@@ -4,6 +4,17 @@ This project is a Reverse Proxy server created to assist developers working on V
 
 ## Getting Started
 
+<!-- TOC -->
+* [VPL Jail Server Reverse Proxy](#vpl-jail-server-reverse-proxy)
+  * [Getting Started](#getting-started)
+    * [Requirements](#requirements)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributing](#contributing)
+    * [License](#license)
+    * [Contact](#contact)
+<!-- TOC -->
+
 ### Requirements
 
 - Go (at least version 1.21 is required)
@@ -35,6 +46,27 @@ Change the URL value for your own Jail Server
 ```go
   const URL = "http://192.168.71.2"
  ```
+
+Example output
+
+```
+[2023-10-29 23:44:17] GET 192.168.18.7:57578/130166687421020/monitor 
+Sec-Websocket-Key: [gBL+wu80fskfcrVqtVYLcg==]
+Sec-Websocket-Extensions: [permessage-deflate; client_max_window_bits]
+Connection: [Upgrade]
+Upgrade: [websocket]
+Sec-Websocket-Version: [13]
+Accept-Encoding: [gzip, deflate]
+Accept-Language: [en-US,en;q=0.9]
+Pragma: [no-cache]
+Cache-Control: [no-cache]
+User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36]
+Origin: [http://localhost:9922]
+{} 
+[ws-response] message:compilation 
+[ws-response] compilation: 
+[ws-response] run:terminal 
+```
 
 ### Contributing
 
